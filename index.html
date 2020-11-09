@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<!--
+    Plain-Academic by Vasilios Mavroudis
+    Released under the  Simplified BSD License/FreeBSD (2-clause) License.
+    https://github.com/mavroudisv/plain-academic
+-->
+
+<html lang="en">
+<head>
+  <title>Suman Samantray's Homepage</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="files/me.png" type="image/icon type">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="files/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href="files/font.css" rel='stylesheet' type='text/css'>
+</head>
+
+<style>
+
+:root {
+    --primary-color: #1B6FC2;
+    --secondary-color: #536390;
+    --font-color: #23476A;
+    --bg-color: #FEFDF9;
+    --heading-color: #292922;
+}
+
+[data-theme="dark"] {
+    --primary-color: #66CCCC;
+    --secondary-color: #818cab;
+    --font-color: #CCCCCC;
+    --bg-color: #2C2C2C;
+    --heading-color: #818cab;
+}
+
+hr {
+  display: block;
+  margin-top: 2.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: .5px;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
+a {
+    color: var(--primary-color);
+}
+a:hover {
+    color: var(--primary-color);
+}
+
+/*Simple css to style it like a toggle switch*/
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+
+  em {
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+}
+
+
+.theme-switch {
+  display: inline-block;
+  top: 7px;
+  height: 27px;
+  right: 70px;
+  position: absolute;
+  width: 32px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider {
+  background-color: #b3b3b3;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 12px;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #FEFDF9;
+  top: 0;
+  content: "";
+  height: 15px;
+  left: 0px;
+  position: absolute;
+  transition: .4s;
+  width: 15px;
+}
+
+input:checked + .slider {
+  background-color: #66CCCC;
+}
+
+input:checked + .slider:before {
+  transform: translateX(17px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+</style>
+
+<body>
+
+<!-- Navigation -->
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+    <ul class="nav navbar-nav">
+              <li><a href="https://sumansamantray.github.io/">Suman Samantray's Homepage</a></li>
+    </ul>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+      </label>
+    </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <!-- Entries Column -->
+            <div class="col-md-3" >
+                <!-- Contact Info on the Sidebar and image -->
+                <div style="font-family: Arial, Helvetica, sans-serif; font-size: 32px;"><b>Suman Samantray</b></div><br>
+                <img class="img-responsive" src="files/me.png" height="400" width="400" alt=""><br>
+                <p>PhD student<br>
+                IBI-7: Structural Biochemistry, FZ J&uuml;lich, J&uuml;lich, Germany<br /> 
+                AICES Fellow, RWTH Aachen, Aachen, Germany<br></p>
+                <p><b>Email:</b> s.samantray [at] fz-juelich [dot] de<br>
+                <b>Office:</b> 2022, 05.8v E2 Building</strike><br></p>
+                <dd><a href="https://sumansamantray.github.io/files/SumanSamantray-CV.pdf" target="_blank">CV</a></dd>
+                <dd><a href="https://github.com/suman-samantray" target="_blank">GitHub</a></dd>
+                <dd><a href="https://scholar.google.com/citations?user=5Zex9xUAAAAJ&hl=en" target="_blank">Google Scholar</a></dd>
+                </p>
+
+            </div>
+
+            <!-- main info -->
+            <div class="col-md-8" >
+                <div style="margin-top:5vh; text-align:justify;">
+
+      <div  style="text-align:left;">
+      <div style="font-family: Arial, Helvetica, sans-serif; font-size: 22px;"><b>Education</b></div><br>
+
+        <li> PhD Computational Biochemistry, <b>IBI-7: Structural Biochemistry, FZ J&uuml;lich, J&uuml;lich, Germany &#47; RWTH Aachen University, Germany</b> <i>(In progress)</i> <br> </li>
+        <li> M.Eng Chemical Engineering, <b>State University of New York, Buffalo, NY, USA</b> <br> </li>
+        <li> B.Tech Chemical Engineering, <b>Indira Gandhi Institute of Technology, Sarang, Odisha, India</b> <br> </li>
+
+      </div>
+
+      <hr>
+
+      <div  style="margin-top:3vh; text-align:left;">
+      <div style="font-family: Arial, Helvetica, sans-serif; font-size: 22px;"><b>Research</b></div><br>
+        <p> Currently my research is mainly focused on applications of, <br>
+          1) Comparison, evaluation, and development of force fields for simulations of intrinsically disordered proteins. <br>
+          2) Graph-convolutional neural networks in prediction of drug-target binding affinity. <br>
+          3) Characterization of self-assembly kinetics of A&beta; peptides and its heterogenous interactions with glycosaminoglycans. <br>
+          4) Development of artificially modified peptides to inhibit the aggregation of intrinsically disordered proteins. <br>
+          5) Protein adsorption, structure and function at liquid interfaces. <br>
+      </div>
+
+      <hr>
+
+      <div  style="margin-top:3vh; text-align:left;">
+      <div align="justify", style="font-family: Arial, Helvetica, sans-serif; font-size: 22px;"><b>Publication</b></div><br>
+
+        <p> Suman Samantray, and Birgit Strodel. <b>Effect of glycosaminoglycans on the dimerisation pathways of amyloid-β peptide.</b>. <i>Journal of Physical Chemistry B. (In preparation) </i>2020 <br>
+
+        <p> Suman Samantray, Olujide Olubiyi, and Birgit Strodel. <b>Elucidating the structure of glycosaminoglycans under different physiological conditions</b>. <i>Biomolecules. (In preparation) </i>2020 <br>
+
+        <p> Arghadwip Paul, Suman Samantray, Marco Anteghini, and Birgit Strodel. <b>Thermodynamics and kinetics of the amyloid-&beta; peptide revealed by Markov state models based on MD data in agreement with experiment</b>. <i>Chemical Science. (In review) </i>2020 <br> <u><a href="https://doi.org/10.1101/2020.07.27.223487" target="_blank">[Link]</a></u><br> 
+
+        <p> Suman Samantray, Wibke Schumann, Alexander-Maurice Illig, Martin Carballo-Pacheco, Arghadwip Paul, Bogdan Barz, and Birgit Strodel. <b>Molecular dynamics simulations of protein aggregation: protocols for simulation setup and analysis with markov state models and transition networks.</b>. <i>Methods in Molecular Biology. (In press) </i>2020 <br> <u><a href="https://doi.org/10.1101/2020.07.27.223487" target="_blank">[Link]</a></u><br>       
+
+        <p> Suman Samantray, and David Cheung. <b>Effect of the air-water interface on the conformation of amyloid beta</b>. <i>Biointerphases. (Just Accepted) </i>2020 <br> <u><a href="https://doi.org/10.26434/chemrxiv.12951977.v2" target="_blank">[Link]</a></u><br> 
+
+        <p> Suman Samantray, Feng Yin, Batuhan Kav, and Birgit Strodel. <b>Different force fields give rise to different amyloid aggregation pathways in molecular dynamics simulations</b>. <i>Journal of Chemical Information and Modelling. (Just Accepted) </i>2020 <br> <u><a href="https://doi.org/10.1101/2020.09.09.290320" target="_blank">[Link]</a></u><br>      
+
+        <p> Stefanie Deike, Sven Rothemund, Bruno Voigt, Suman Samantray, Birgit Strodel, and Wolfgang H. Binder. <b>&Beta;-Turn mimetic synthetic peptides as amyloid-&beta; aggregation inhibitors</b>. <i>Bioorganic Chemistry.</i>2020, 101, pp. 104012. doi: 10.1016/j.bioorg.2020.104012. <br> <u><a href="https://doi.org/10.1016/j.bioorg.2020.104012" target="_blank">[Link]</a></u><br>
+
+        <p> David L. Cheung, and Suman Samantray. <b>Molecular Dynamics Simulation of Protein Biosurfactants</b>. <i>Colloids and Interfaces.</i>2018, 2(3), pp. 39. doi: 10.3390/colloids2030039. <br> <u><a href="https://doi.org/10.3390/colloids2030039" target="_blank">[Link]</a></u><br>
+
+      </div>
+
+
+      <hr>
+
+ <!-- Other people may like it too! -->
+     <div>
+    <p style="font-size:0.8em; float:right; color:#b5bec9;"> Thanks to <u> <a style="color:#b5bec9" target="_blank" href="https://mavroud.is/">Vasilios Mavroudis</a></u> for the <u><a style="color:#b5bec9" target="_blank" href="https://github.com/mavroudisv/plain-academic">template</a></u>!</p>
+    </div>
+    <!-- /.container -->
+
+
+<script>
+
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark'); //add this
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light'); //add this
+    }
+}
+
+
+const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+
+    if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+    }
+}
+
+</script>
+
+
+</body>
+
+</html>
